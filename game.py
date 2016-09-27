@@ -13,9 +13,12 @@ def guessing_game():
 		count += 1
 		if guess > random_number_generated:
 			print "Your guess is too high! Try again!"
+			guess = int(raw_input("Your guess? "))
 		else:
 			print "Your guess is too low! Try again!"
+			guess = int(raw_input("Your guess? "))
 	else:
+		count += 1
 		print "Congratulations, {}! You found the number in {} tries!".format(player_name, count)
-
+		
 guessing_game()
