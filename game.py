@@ -9,7 +9,7 @@ random_number_generated = random.randint(1, 100)
 def guessing_game():
 	guess = int(raw_input("Your guess? "))
 	count = 0
-	if guess != random_number_generated:
+	while guess != random_number_generated:
 		count += 1
 		if guess > random_number_generated:
 			print "Your guess is too high! Try again!"
